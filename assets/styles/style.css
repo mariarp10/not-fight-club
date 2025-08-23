@@ -215,3 +215,46 @@
   width: 300px;
   align-self: center;
 }
+
+
+.content-container--settings {
+  display: flex;
+  gap: 30px;
+  padding-block: 50px;
+}
+
+.edit-window {
+  display: none;
+}
+
+.edit-window.opened {
+  position: relative;
+  background-color: gray;
+  width: 50vw;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline: 30px;
+}
+
+.name-window-title {
+  padding-block-start: 50px;
+}
+
+.close-button--settings {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.confirmation-button--settings {
+  width: 30%;
+  font-size: 1.2rem;
+  align-self: center;
+  margin-block-end: 30px;
+}
+
+.content-container--fight {
+  color: black;
+}
