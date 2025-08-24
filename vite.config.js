@@ -10,6 +10,7 @@ export default defineConfig({
         avatar: "./avatar.html",
         home: "./homePage.html",
         character: "./character.html",
+        fight: "./fightPage.html"
       },
     },
   },
