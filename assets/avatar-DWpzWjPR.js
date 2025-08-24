@@ -1,0 +1,1 @@
+import"./main-Dv0DBS2B.js";import{u as t}from"./storage-BNua7zIC.js";const r=document.querySelector(".confirm-avatar-selection");r.addEventListener("click",()=>{const e=document.querySelector(".avatar-selector:checked + .image-wrapper .avatar-picture").getAttribute("src");t("avatar",e),window.location.href="homePage.html"});

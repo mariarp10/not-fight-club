@@ -1,0 +1,1 @@
+const r="player",t=JSON.parse(localStorage.getItem(r));function o(e,a){t[e]=a,localStorage.setItem(r,JSON.stringify(t)),location.reload()}function l(e,a){return a===void 0?t[e]:t[e][a]}export{l as g,o as u};

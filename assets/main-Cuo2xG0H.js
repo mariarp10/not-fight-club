@@ -1,0 +1,1 @@
+import"./main-Dv0DBS2B.js";const t=document.querySelector(".name-input"),n=document.querySelector(".confirm-name");function r(){const e=t.value.trim();if(e){const a={name:e,avatar:"",stats:{wins:0,losses:0}};localStorage.setItem("player",JSON.stringify(a)),window.location.href="avatar.html"}else alert("Please enter a valid name")}n.addEventListener("click",r);
