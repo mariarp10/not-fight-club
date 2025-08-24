@@ -85,30 +85,30 @@
       <form class="fight-actions">
         <div class="list-wrapper">
           <div class="zones-list">
-            <h3 class="zones-list-title">Defence zones</h3>
+            <h3 class="zones-list-title">Defense zones</h3>
             <p class="zones-list-subtitle">please choose one</p>
             <label>
-              <input class="defence-zone" type="radio" />
+              <input name="defense-zone" class="defense-zone" type="radio" value="head"/>
               Head
             </label>
             <label>
-              <input class="defence-zone" type="radio" />
+              <input name="defense-zone" class="defense-zone" type="radio" value="body"/>
               Body
             </label>
             <label>
-              <input class="defence-zone" type="radio" />
+              <input name="defense-zone" class="defense-zone" type="radio" value="leftArm"/>
               Left arm
             </label>
             <label>
-              <input class="defence-zone" type="radio" />
+              <input name="defense-zone" class="defense-zone" type="radio" value="rightArm"/>
               Right arm
             </label>
             <label>
-              <input class="defence-zone" type="radio" />
+              <input name="defense-zone" class="defense-zone" type="radio" value="leftLeg"/>
               Left leg
             </label>
             <label>
-              <input class="defence-zone" type="radio" />
+              <input name="defense-zone" class="defense-zone" type="radio" value="rightLeg"/>
               Right leg
             </label>
           </div>
@@ -116,27 +116,27 @@
             <h3 class="zones-list-title">Attack zones</h3>
             <p class="zones-list-subtitle">please choose two</p>
             <label>
-              <input class="defence-zone" type="checkbox" />
+              <input name="attack-zone" class="attack-zone" type="checkbox" value="head"/>
               Head
             </label>
             <label>
-              <input class="defence-zone" type="checkbox" />
+              <input name="attack-zone" class="attack-zone" type="checkbox" value="body"/>
               Body
             </label>
             <label>
-              <input class="defence-zone" type="checkbox" />
+              <input name="attack-zone" class="attack-zone" type="checkbox" value="leftArm"/>
               Left arm
             </label>
             <label>
-              <input class="defence-zone" type="checkbox" />
+              <input name="attack-zone" class="attack-zone" type="checkbox" value="rightArm"/>
               Right arm
             </label>
             <label>
-              <input class="defence-zone" type="checkbox" />
+              <input name="attack-zone" class="attack-zone" type="checkbox" value="leftLeg"/>
               Left leg
             </label>
             <label>
-              <input class="defence-zone" type="checkbox" />
+              <input name="attack-zone" class="attack-zone" type="checkbox" value="rightLeg"/>
               Right leg
             </label>
           </div>
@@ -162,6 +162,8 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./features/fight-procces.js"></script>
+    <script type="module" src="./features/fight-validation.js"></script>
     <script type="module" src="./features/enemy.js"></script>
     <script type="module" src="./features/fight.js"></script>
     <script type="module" src="./main.js"></script>

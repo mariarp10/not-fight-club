@@ -33,12 +33,29 @@ function initializeEnemy() {
 initializeEnemy();
 
 function renderEnemy() {
-    const nameContainer = document.querySelector(".enemy-character-name");
-    const enemyName = JSON.parse(localStorage.getItem("enemy"))["name"];
-    nameContainer.textContent = enemyName;
+  const nameContainer = document.querySelector(".enemy-character-name");
+  const enemyName = JSON.parse(localStorage.getItem("enemy"))["name"];
+  nameContainer.textContent = enemyName;
   const imageContainer = document.querySelector(".avatar-picture--enemy");
   const imageAddress = JSON.parse(localStorage.getItem("enemy"))["avatar"];
   imageContainer.src = imageAddress;
 }
 
 renderEnemy();
+
+export function getMoveEnemy() {
+  const options = Array.from(
+    document.querySelectorAll('input[name="defense-zone"]')
+  ).map((input) => input.value);
+  const enemyDefense = options[Math.floor(Math.random() * options.length)];
+  const enemyAttack = [];
+  for (let i = 0; i < 2; i++) {
+    let attack = options[Math.floor(Math.random() * options.length)];
+    enemyAttack.push(attack);
+  }
+  const enemyMove = {
+    defence: enemyDefense,
+    attack: enemyAttack,
+  };
+  localStorage.setItem("enemyMove", JSON.stringify(enemyMove));
+}

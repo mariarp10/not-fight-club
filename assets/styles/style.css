@@ -279,7 +279,7 @@
 
 .current-health-range--user {
   height: 10px;
-  width: 70%;
+  width: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: gray;
@@ -287,7 +287,7 @@
 
 .current-health-range--enemy {
   height: 10px;
-  width: 70%;
+  width: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: gray;
