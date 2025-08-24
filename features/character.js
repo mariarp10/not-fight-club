@@ -1,10 +1,10 @@
 import { getPlayerData, updatePlayerData } from "../utils/storage.js";
 const avatarOptions = document.querySelector(".container-wrapper");
-const currentPicture = getPlayerData("avatar");
+const currentPictureUser = getPlayerData("avatar");
 
-function renderCharacterData(currentPicture) {
+function renderCharacterData(currentPictureUser) {
   const currentAvatarImg = document.querySelector(".current-avatar-picture");
-  currentAvatarImg.src = currentPicture;
+  currentAvatarImg.src = currentPictureUser;
 
   const nameField = document.querySelector(".character-name");
   nameField.textContent = getPlayerData("name");
@@ -16,13 +16,13 @@ function renderCharacterData(currentPicture) {
   lossesFiled.textContent = getPlayerData("stats", "losses");
 }
 
-renderCharacterData(currentPicture);
+renderCharacterData(currentPictureUser);
 
-function markCurrentAvatar(currentPicture) {
-  const currentPictureDOM = document.querySelector(
-    `img.avatar-picture[src="${currentPicture}"]`
+function markCurrentAvatar(currentPictureUser) {
+  const currentPictureUserDOM = document.querySelector(
+    `img.avatar-picture[src="${currentPictureUser}"]`
   );
-  const imageContainer = currentPictureDOM.parentElement;
+  const imageContainer = currentPictureUserDOM.parentElement;
   imageContainer.classList.add("marked");
   const imageSelector = imageContainer.previousElementSibling;
   imageSelector.disabled = true;
@@ -34,7 +34,7 @@ function markCurrentAvatar(currentPicture) {
   );
 }
 
-markCurrentAvatar(currentPicture);
+markCurrentAvatar(currentPictureUser);
 
 const saveButton = document.querySelector(".confirmation-button");
 
